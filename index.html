@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NovaAI | Infraestructura de IA para Empresas Tradicionales</title>
+    <meta name="description" content="Diseñamos e implementamos infraestructura operativa inteligente impulsada por Inteligencia Artificial para automatizar atención, ventas y workflows.">
+    
+    <!-- Open Graph / SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="NovaAI | Infraestructura de IA para Empresas">
+    <meta property="og:description" content="Sistemas inteligentes de automatización y flujos de trabajo operativos para negocios tradicionales.">
+    <meta property="og:image" content="assets/logo-full.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- SCREEN LOADER / LOGO IGNITION INTRO -->
+    <div id="loader" class="loader-overlay">
+        <canvas id="loader-canvas"></canvas>
+        <div class="loader-content">
+            <div class="logo-assembly">
+                <img id="loader-logo-symbol" src="assets/logo-symbol.png" alt="NovaAI Logo Symbol" class="logo-symbol-glow">
+            </div>
+            <div class="loader-status">Iniciando infraestructura inteligente...</div>
+        </div>
+    </div>
+
+    <!-- PERSISTENT BACKGROUND INTERACTIVE CANVAS -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="brand-logo" id="header-logo-link">
+                <img src="assets/logo-full.png" alt="NovaAI Logo" class="header-logo-img">
+            </a>
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Abrir Menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <nav class="mobile-nav" id="mobile-navigation">
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link-item">Inicio</a></li>
+            <li><a href="#problema" class="nav-link-item">Diagnóstico</a></li>
+            <li><a href="#solucion" class="nav-link-item">Solución</a></li>
+            <li><a href="#tecnologia" class="nav-link-item">Ecosistema</a></li>
+            <li><a href="#como-funciona" class="nav-link-item">Demo</a></li>
+            <li><a href="#resultados" class="nav-link-item">Resultados</a></li>
+        </ul>
+        <div class="nav-footer">
+            <a href="https://w.app/2fx9lo" target="_blank" rel="noopener" class="btn btn-primary btn-block">Agendar Consulta</a>
+        </div>
+    </nav>
+
+    <!-- MAIN APP WRAPPER -->
+    <main class="app-wrapper">
+
+        <!-- ============================================================
+             SECTION 1: HERO
+             ============================================================ -->
+        <section id="hero" class="hero-section">
+            <div class="section-container">
+                <div class="hero-brand-name text-decoration-animate">
+                    <span class="word-animate" data-delay="300">NOVA</span>
+                    <span class="word-animate" data-delay="600">IA</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="word-animate" data-delay="900">Lo</span>
+                    <span class="word-animate" data-delay="1050">mejor</span>
+                    <span class="word-animate" data-delay="1200">de</span>
+                    <span class="word-animate" data-delay="1350">la</span>
+                    <span class="word-animate" data-delay="1500">IA</span>
+                    <span class="word-animate" data-delay="1650">al</span>
+                    <br>
+                    <span class="word-animate hero-word-gradient" data-delay="1900">alcance</span>
+                    <span class="word-animate hero-word-gradient" data-delay="2050">de</span>
+                    <span class="word-animate hero-word-gradient" data-delay="2200">tu</span>
+                    <span class="word-animate hero-word-gradient" data-delay="2350">negocio.</span>
+                </h1>
+                <p class="hero-subtitle hero-fade-in">
+                    Diseñamos e integramos sistemas inteligentes que no solo solucionan tus problemas operativos, sino que escalan tu negocio de forma medible.
+                </p>
+                <div class="hero-actions hero-fade-in" style="animation-delay: 0.3s">
+                    <a href="#como-funciona" class="btn btn-primary" id="hero-cta-demo">Ver cómo funciona</a>
+                    <a href="https://w.app/2fx9lo" target="_blank" rel="noopener" class="btn btn-secondary" id="hero-cta-explore">Agenda una consulta</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-dot"></span>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECTION 2: EL DIAGNÓSTICO (sin cambios)
+             ============================================================ -->
+        <section id="problema" class="problem-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">El Diagnóstico</span>
+                    <h2 class="section-title">El precio oculto de no automatizar tu negocio</h2>
+                    <p class="section-desc">Trabajas más horas que nunca, pero sientes que no avanzas. Esto es lo que te está frenando:</p>
+                </div>
+
+                <div class="problem-bento-grid">
+                    <!-- Tarjeta 1: El dolor del horario -->
+                    <div class="problem-card bento-card glass-card card-rotate-left" id="problem-card-horario">
+                        <div class="card-icon-emoji">📱</div>
+                        <div class="card-pain-content">
+                            <span class="card-pain-badge">24/7 SIN DESCANSO</span>
+                            <h3>¿Esclavo de tu WhatsApp?</h3>
+                            <p>Las consultas llegan fuera de horario y tienes dos opciones horribles: o trabajas de madrugada <span class="highlight-alert">perdiendo</span> tu vida personal, o respondes al día siguiente y el cliente ya le compró a la competencia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2: El dolor del rol (MÁS ANCHA/GRANDE) -->
+                    <div class="problem-card bento-card bento-wide glass-card card-rotate-right" id="problem-card-rol">
+                        <div class="card-icon-emoji anim-bounce">💼</div>
+                        <div class="card-pain-content">
+                            <span class="card-pain-badge">SÍNDROME DEL AUTO-EMPLEADO</span>
+                            <h3>Eres el dueño, pero trabajas de asistente.</h3>
+                            <p>Armar presupuestos, rellenar Excels financieros interminables, hacer de community manager... Estás gastando tu valioso tiempo de CEO en tareas repetitivas que un sistema inteligente hace en segundos, manteniéndote <span class="highlight-alert">esclavizado</span> en la operatividad.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3: El dolor del dinero -->
+                    <div class="problem-card bento-card glass-card card-overlap-left" id="problem-card-dinero">
+                        <div class="card-icon-emoji">💸</div>
+                        <div class="card-pain-content">
+                            <span class="card-pain-badge">DINERO EN LA BASURA</span>
+                            <h3>Ventas que se esfuman por falta de seguimiento.</h3>
+                            <p>Conseguir un prospecto es caro, pero perderlo en el <span class="highlight-alert">olvido</span> por no mandarle un mensaje de seguimiento es un crimen. Sin un sistema automatizado de retención y post-venta, tus clientes compran una vez y <span class="highlight-alert">no vuelven jamás</span>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 4: El dolor del descontrol -->
+                    <div class="problem-card bento-card glass-card card-overlap-right" id="problem-card-descontrol">
+                        <div class="card-icon-emoji">🙈</div>
+                        <div class="card-pain-content">
+                            <span class="card-pain-badge">VOLANDO A CIEGAS</span>
+                            <h3>Decisiones basadas en intuición, no en datos.</h3>
+                            <p>Al tener la información dispersa, no sabes exactamente cuánto vendes, qué producto es más rentable, ni dónde estás fallando. Un <span class="highlight-alert">retraso</span> en reportes te impide tener un panel de control real de tu negocio a un solo clic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECTION 3: LA SOLUCIÓN (5 capacidades)
+             ============================================================ -->
+        <section id="solucion" class="solution-proposal-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Nuestra propuesta</span>
+                    <h2 class="section-title">Un sistema que trabaja <span class="text-gradient">por vos</span></h2>
+                    <p class="section-desc">No es un chatbot. Es un asistente operativo completo, entrenado con la información de tu negocio, que actúa como tu mejor empleado disponible 24/7.</p>
+                </div>
+
+                <div class="capabilities-list">
+                    <div class="capability-item glass-card" id="cap-atencion">
+                        <div class="capability-icon">💬</div>
+                        <div class="capability-content">
+                            <h3>Atención al cliente</h3>
+                            <p>Responde consultas, resuelve dudas y cierra ventas de forma autónoma.</p>
+                        </div>
+                        <div class="capability-arrow">→</div>
+                    </div>
+
+                    <div class="capability-item glass-card" id="cap-recepcionista">
+                        <div class="capability-icon">📅</div>
+                        <div class="capability-content">
+                            <h3>Recepcionista virtual</h3>
+                            <p>Agenda turnos, envía recordatorios y gestiona cancelaciones sin intervención humana.</p>
+                        </div>
+                        <div class="capability-arrow">→</div>
+                    </div>
+
+                    <div class="capability-item glass-card" id="cap-crm">
+                        <div class="capability-icon">🗂️</div>
+                        <div class="capability-content">
+                            <h3>CRM automático</h3>
+                            <p>Registra cada interacción, etiqueta clientes y actualiza su estado en tiempo real.</p>
+                        </div>
+                        <div class="capability-arrow">→</div>
+                    </div>
+
+                    <div class="capability-item glass-card" id="cap-informes">
+                        <div class="capability-icon">📈</div>
+                        <div class="capability-content">
+                            <h3>Informes operativos</h3>
+                            <p>Genera reportes de ventas, stock y actividad y los envía directo a tu WhatsApp.</p>
+                        </div>
+                        <div class="capability-arrow">→</div>
+                    </div>
+
+                    <div class="capability-item glass-card" id="cap-marketing">
+                        <div class="capability-icon">📣</div>
+                        <div class="capability-content">
+                            <h3>Marketing y seguimiento</h3>
+                            <p>Ejecuta campañas de retención y post-venta de forma programada y personalizada.</p>
+                        </div>
+                        <div class="capability-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECTION 4: INTEGRACIÓN GLOBAL (orbital sin tarjeta)
+             ============================================================ -->
+        <section id="tecnologia" class="tech-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Conectividad</span>
+                    <h2 class="section-title">Integración <span class="text-gradient">Global</span></h2>
+                    <p class="section-desc">Todas las herramientas que tu negocio necesita para escalar, a tu disposición en tan solo un click.</p>
+                </div>
+
+                <!-- RADIAL ORBITAL — SIN TARJETA ENVOLVENTE -->
+                <div class="orbital-timeline-wrapper" id="orbital-container">
+                    <div class="orbital-view">
+                        <!-- Orbit Path Line -->
+                        <div class="orbital-orbit-line" id="orbital-line"></div>
+                        
+                        <!-- Pulsing Center (NovaAI) -->
+                        <div class="orbital-center-core">
+                            <div class="core-glow-1"></div>
+                            <div class="core-glow-2"></div>
+                            <div class="core-symbol">
+                                <img src="assets/logo-symbol.png" alt="NovaAI Core">
+                            </div>
+                        </div>
+
+                        <!-- Nodes Container -->
+                        <div class="orbital-nodes-wrap" id="orbital-nodes-container">
+                            <!-- Nodes generated dynamically via Javascript -->
+                        </div>
+                    </div>
+
+                    <!-- Details Card Sheet (Expanded Node Details) -->
+                    <div class="orbital-details-card" id="orbital-details-sheet">
+                        <!-- Content injected dynamically via Javascript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECTION 5: DEMO / SIMULADOR INTERACTIVO
+             ============================================================ -->
+        <section id="como-funciona" class="how-it-works-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">El sistema en acción!</span>
+                    <h2 class="section-title">No se trata de un simple bot de <span class="text-gradient">respuestas automáticas!</span></h2>
+                    <p class="section-desc">Seleccioná tu rubro y chateá con el asistente.</p>
+                </div>
+
+                <!-- PHONE SIMULATOR CONTAINER -->
+                <div class="simulator-wrapper">
+                    <!-- Industry Selector Menu (Horizontal Scroll) -->
+                    <div class="industry-selector" id="sim-industry-selector">
+                        <button class="industry-tab active" data-industry="salon">
+                            <span>💇‍♀️</span> Salón / Estética
+                        </button>
+                        <button class="industry-tab" data-industry="clinica">
+                            <span>🩺</span> Clínica Médica
+                        </button>
+                        <button class="industry-tab" data-industry="servicios">
+                            <span>💼</span> Estudio Profesional
+                        </button>
+                        <button class="industry-tab" data-industry="retail">
+                            <span>🛒</span> Retail / Pyme
+                        </button>
+                    </div>
+
+                    <!-- Phone Mockup — SIN borde giratorio -->
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <!-- Floating Particles -->
+                            <div class="chat-particles" id="chat-particles"></div>
+                            <!-- App Chat Container -->
+                            <div class="chat-app">
+                                <div class="chat-header">
+                                    <div class="bot-avatar">
+                                        <img src="assets/logo-symbol.png" alt="NovaAI Bot">
+                                    </div>
+                                    <div class="bot-info">
+                                        <span class="bot-name" id="sim-bot-name">Nova Asistente</span>
+                                        <span class="bot-status">● En línea (24/7)</span>
+                                    </div>
+                                </div>
+                                <div class="chat-body" id="sim-chat-body">
+                                    <!-- Messages load dynamically here -->
+                                </div>
+                                <div class="chat-input-area">
+                                    <!-- Contenedor de acciones (vacío, no se usan botones) -->
+                                    <div class="sim-suggested-actions" id="sim-actions-container"></div>
+                                    <form class="chat-input-form-wrap" id="sim-chat-form">
+                                        <input type="text" id="sim-chat-input" class="chat-input-real" placeholder="Escribe un mensaje..." autocomplete="off">
+                                        <button type="submit" id="sim-send-btn" class="send-btn-real" aria-label="Enviar mensaje">
+                                            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Phone Notifications System -->
+                        <div class="phone-notifications" id="sim-notifications">
+                            <!-- Notification bubble inserts here dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECTION 6: RESULTADOS (nueva)
+             ============================================================ -->
+        <section id="resultados" class="results-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Impacto real</span>
+                    <h2 class="section-title">Lo que cambia cuando <span class="text-gradient">automatizás</span></h2>
+                </div>
+
+                <!-- 3 Métricas grandes -->
+                <div class="metrics-grid">
+                    <div class="metric-card glass-card" id="metric-tiempo">
+                        <div class="metric-value-wrap">
+                            <span class="metric-prefix">-</span>
+                            <span class="metric-number" data-target="80">0</span>
+                            <span class="metric-suffix">%</span>
+                        </div>
+                        <p class="metric-label">en tiempo dedicado a tareas repetitivas</p>
+                    </div>
+                    <div class="metric-card glass-card" id="metric-velocidad">
+                        <div class="metric-value-wrap">
+                            <span class="metric-prefix">+</span>
+                            <span class="metric-number" data-target="3">0</span>
+                            <span class="metric-suffix">x</span>
+                        </div>
+                        <p class="metric-label">velocidad de respuesta al cliente</p>
+                    </div>
+                    <div class="metric-card metric-card-full glass-card" id="metric-disponibilidad">
+                        <div class="metric-value-wrap">
+                            <span class="metric-number metric-number-fixed">24/7</span>
+                        </div>
+                        <p class="metric-label">operación sin costo de personal adicional</p>
+                    </div>
+                </div>
+
+                <!-- 2 Escenarios (mini casos de uso) -->
+                <div class="scenarios-container">
+                    <div class="scenario-card glass-card">
+                        <div class="scenario-accent-bar"></div>
+                        <div class="scenario-quote-mark">"</div>
+                        <p class="scenario-text">Un local recibía 120 consultas semanales por WhatsApp. Hoy su asistente responde, filtra y agenda citas de forma autónoma. <strong>El equipo solo concreta ventas en el local.</strong></p>
+                    </div>
+                    <div class="scenario-card glass-card">
+                        <div class="scenario-accent-bar"></div>
+                        <div class="scenario-quote-mark">"</div>
+                        <p class="scenario-text">Una clínica con 3 profesionales perdía turnos por falta de seguimiento. Desde que automatizó los recordatorios y la reconfirmación, <strong>redujo el ausentismo un 65%.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             SECTION 7: CTA FINAL
+             ============================================================ -->
+        <section id="cta-final" class="cta-final-section">
+            <div class="section-container">
+                <div class="cta-box glass-card">
+                    <h2 class="cta-title">Agendá una demo y diseñamos tu sistema</h2>
+                    <p class="cta-desc">Sin compromiso. En 30 minutos te mostramos exactamente cómo se vería la automatización de tu negocio.</p>
+                    <a href="https://w.app/2fx9lo" target="_blank" rel="noopener" class="btn btn-primary" id="cta-final-btn">Quiero agendar una llamada</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LEAD / CALENDAR MODAL (dormant — available for future use) -->
+    <div id="demo-modal" class="modal-overlay">
+        <div class="modal-card glass-card">
+            <button class="modal-close" id="close-modal-btn">&times;</button>
+            <div class="modal-header">
+                <h3>Agendar Demo de NovaAI</h3>
+                <p>Configura una videollamada corta para diseñar la infraestructura de automatización ideal para tu empresa.</p>
+            </div>
+            <form id="demo-form" class="modal-form">
+                <div class="form-group">
+                    <label for="form-name">Tu Nombre</label>
+                    <input type="text" id="form-name" placeholder="Ej. Carlos Mendoza" required>
+                </div>
+                <div class="form-group">
+                    <label for="form-business">Nombre del Negocio / Rubro</label>
+                    <input type="text" id="form-business" placeholder="Ej. Salón Bella Spá" required>
+                </div>
+                <div class="form-group">
+                    <label for="form-contact">WhatsApp / Correo</label>
+                    <input type="text" id="form-contact" placeholder="Ej. +54 9 11 1234 5678" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirmar Solicitud de Demo</button>
+            </form>
+            <div class="modal-success-message" id="modal-success-msg">
+                <div class="success-icon">✓</div>
+                <h4>¡Solicitud Recibida!</h4>
+                <p>Un ingeniero de automatización de NovaAI se contactará contigo vía WhatsApp en los próximos 15 minutos para coordinar la fecha y hora de tu demo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS script -->
+    <script src="js/app.js"></script>
+</body>
+</html>
