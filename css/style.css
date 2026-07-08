@@ -2226,3 +2226,183 @@ p {
     font-size: 0.85rem;
     line-height: 1.5;
 }
+
+/* ==========================================================================
+   12. API INTEGRATIONS INFINITE CAROUSEL
+   ========================================================================== */
+.api-carousel-container {
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.api-carousel-subtitle {
+    font-family: var(--font-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.api-carousel-slider {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    overflow: hidden;
+    /* Soft fading gradients on the sides */
+    mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 15%, #000 85%, transparent);
+}
+
+.api-carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-carousel 38s linear infinite;
+}
+
+/* Pause scroll when hovering over the track */
+.api-carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.api-logo-group {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding-right: 45px;
+}
+
+.api-logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.api-logo-item svg {
+    width: 34px;
+    height: 34px;
+    fill: currentColor;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+}
+
+.api-logo-item span {
+    font-family: var(--font-secondary);
+    font-size: 0.72rem;
+    font-weight: 500;
+    margin-top: 8px;
+    opacity: 0.5;
+    white-space: nowrap;
+    transition: all 0.4s ease;
+}
+
+/* Hover effects */
+.api-logo-item:hover {
+    transform: translateY(-4px);
+}
+
+.api-logo-item:hover span {
+    color: #ffffff;
+    opacity: 1;
+}
+
+/* Custom Brand Colors and Glows on Hover */
+.api-logo-item.whatsapp:hover {
+    color: #25D366;
+    filter: drop-shadow(0 0 10px rgba(37, 211, 102, 0.4));
+}
+
+.api-logo-item.facebook:hover {
+    color: #1877F2;
+    filter: drop-shadow(0 0 10px rgba(24, 119, 242, 0.4));
+}
+
+.api-logo-item.instagram:hover {
+    color: #E1306C;
+    filter: drop-shadow(0 0 10px rgba(225, 48, 108, 0.4));
+}
+
+.api-logo-item.webhook:hover {
+    color: #06b6d4;
+    filter: drop-shadow(0 0 10px rgba(6, 182, 212, 0.4));
+}
+
+.api-logo-item.n8n:hover {
+    color: #FF6C37;
+    filter: drop-shadow(0 0 10px rgba(255, 108, 55, 0.4));
+}
+
+.api-logo-item.googlecalendar:hover {
+    color: #4285F4;
+    filter: drop-shadow(0 0 10px rgba(66, 133, 244, 0.4));
+}
+
+.api-logo-item.googlesheets:hover {
+    color: #0F9D58;
+    filter: drop-shadow(0 0 10px rgba(15, 157, 88, 0.4));
+}
+
+.api-logo-item.openai:hover {
+    color: #10a37f;
+    filter: drop-shadow(0 0 10px rgba(16, 163, 127, 0.4));
+}
+
+.api-logo-item.googlegemini:hover {
+    color: #8a2be2;
+    filter: drop-shadow(0 0 10px rgba(138, 43, 226, 0.4));
+}
+
+.api-logo-item.nanobanana:hover {
+    color: #FFE135;
+    filter: drop-shadow(0 0 10px rgba(255, 225, 53, 0.4));
+}
+
+.api-logo-item.make:hover {
+    color: #a855f7;
+    filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.4));
+}
+
+.api-logo-item.stripe:hover {
+    color: #635bff;
+    filter: drop-shadow(0 0 10px rgba(99, 91, 255, 0.4));
+}
+
+.api-logo-item.slack:hover {
+    color: #36c5f0;
+    filter: drop-shadow(0 0 10px rgba(54, 197, 240, 0.4));
+}
+
+.api-logo-item.hubspot:hover {
+    color: #ff7a59;
+    filter: drop-shadow(0 0 10px rgba(255, 122, 89, 0.4));
+}
+
+.api-logo-item.shopify:hover {
+    color: #96bf48;
+    filter: drop-shadow(0 0 10px rgba(150, 191, 72, 0.4));
+}
+
+.api-logo-item.mercadopago:hover {
+    color: #009ee3;
+    filter: drop-shadow(0 0 10px rgba(0, 158, 227, 0.4));
+}
+
+/* Infinite Scroll Keyframes */
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
